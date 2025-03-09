@@ -1,2 +1,48 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Reenie+Beanie&family=Rubik+Mono+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+
+:root{
+  --font-bebas: 'Bebas Neue', sans-serif;
+  --font-reenie: 'Reenie Beanie', cursive;
+  --font-rubik: 'Rubik Mono One', sans-serif;
+  --font-work: 'Work Sans', sans-serif;
+}
+
+/* Custom utility classes for your fonts */
+.font-bebas {
+  font-family: var(--font-bebas);
+}
+
+.font-reenie {
+  font-family: var(--font-reenie);
+}
+
+.font-rubik {
+  font-family: var(--font-rubik);
+}
+
+.font-work {
+  font-family: var(--font-work);
+}
+
+@theme {
+  /* Core Colors Only */
+  --primary: theme(colors.emerald.400);    /* Main emerald color */
+  --secondary: theme(colors.yellow.400);                    /* Copper tone for interactions */
+  --default: theme(colors.yellow.50);                           /* Off-white background */
+  --text: #000000;                         /* Soft black text */
+}
+
+/* Ultra Simple Utility Classes */
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-default{ background-color: var(--default); }
+
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-default { color: var(--text); }
+.text-bg{ color: var(--default); }
+
+.border-primary { border-color: var(--primary); }
+.border-secondary { border-color: var(--secondary); }

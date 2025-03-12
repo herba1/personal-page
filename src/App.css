@@ -1,0 +1,5 @@
+.text-negative{
+  color: rgb(53, 46, 2); 
+  mix-blend-mode: difference;
+  filter: invert();
+}

@@ -85,7 +85,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="  sticky top-0 bg-primary shadow-lg border-b-4  z-10 flex items-center px-6 h-18 py-3 justify-between ">
+      <nav className="  sticky top-0 bg-primary shadow-lg border-b-4  z-20 flex items-center px-6 h-18 py-3 justify-between ">
         {isOpen && <NavDropdown/>}
         <div className=" flex items-center h-full w-full justify-between relative">
           <NavLogo />

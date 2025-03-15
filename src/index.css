@@ -68,3 +68,43 @@ body{
 
 .border-primary { border-color: var(--primary); }
 .border-secondary { border-color: var(--secondary); }
+
+@keyframes randomShift {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(calc(var(--random, 5) * 1rem)); } /* Randomize */
+}
+
+.animate-randomShift1 {
+  animation: randomShift 2s infinite alternate ease-in-out;
+}
+.animate-randomShift2 {
+  animation: randomShift 4s 1s infinite alternate ease-in-out;
+}
+.animate-randomShift3 {
+  animation: randomShift 6s 4s infinite alternate ease-in-out;
+}
+.animate-randomShift4 {
+  animation: randomShift 1s 3s infinite alternate ease-in-out;
+}
+
+.animate-sway{
+  animation: sway 15s alternate-reverse infinite ease-in-out;
+}
+
+@keyframes sway{
+  from{
+    scale:1.05;
+    rotate: 2deg;
+    translate: 1px 5px;
+  }
+  50%{
+    scale: 0.95;
+    rotate: -2deg;
+    translate: 1px 5px;
+  }
+  to{
+    scale:1;
+    rotate: -1deg;
+    translate: 1px 5px;
+  }
+}

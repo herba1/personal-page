@@ -13,7 +13,7 @@ function About() {
     return (
       <p
         key={index}
-        className=" md:text-2xl lg:text-3xl transition hover:outline-4 hover:invert hover:bg-yellow-400 hover:scale-110 leading-tight  font-work text-md sm:text-xl  text-shadow-sm"
+        className=" md:text-2xl lg:text-3xl transition hover:scale-105 leading-tight  font-work text-md sm:text-xl  text-shadow-sm"
       >
         {para}
       </p>

@@ -85,17 +85,38 @@ function Cards(){
     );
   });
   return(
-    <div className="cards__container max-w-[var(--screen-limit)] p-12 grid gap-10 md:grid-cols-2">
+    <div className=" z-10 cards__container max-w-[var(--screen-limit)] p-12 grid gap-10 md:grid-cols-2">
       {cardList}
     </div>
   );
 }
 
+function ProjectsMessage(){
+  return(
+    <h3 className="font-gochi lg:text-7xl z-10 text-4xl mb-10 animate-pulse">work in progress...</h3> 
+  );
+}
+
+function TextWall({ text="Nothing's gonna change my world ", repeat=4}){
+  let lines = [];
+  for(let i = 0; i < repeat;i++){
+    lines.push(<p key={i} className={`animate-randomShift${i+1} bg-yellow-400  relative leading-none lg:text-4xl select-none font-bebas text-2xl text-nowrap`}>{text.repeat(20)}</p>);
+  };
+  return(
+  <div className=" overflow-x-clip ">
+    {lines}
+  </div>
+  );
+}
+
 export default function Projects(){
   return (
-    <div className=" projects__container flex flex-col items-center justify-center">
+    <div className=" relative projects__container flex flex-col items-center justify-center">
       <Title title={"Projects"} />
       <Cards/>
+      <ProjectsMessage/>
+      <TextWall/>
+      <SectionFade/>
     </div>
   );
 }

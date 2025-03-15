@@ -28,7 +28,7 @@ function HeroTitle(){
 export default function Hero(){
   return(
     <div id="hero__container"
-      className="min-[100vh]:bg-cover bg-no-repeat  overflow-clip w-full max-w-full relative md:scale-100 bg-[url(/hero775.png)] md:bg-[url(/hero1440new.png)] md:blur-1xl h-[868px] flex justify-center">
+      className="min-[100vh]:bg-cover bg-no-repeat overflow-clip w-full max-w-full relative md:scale-100 bg-[url(/hero775.png)] md:bg-[url(/hero1440new.png)] md:blur-1xl h-[868px] flex justify-center">
         <div className="md:backdrop-blur-[2px] absolute w-full h-full transition ease-in 1s "></div>
         <HeroTextLeft/>
         <HeroTitle/>

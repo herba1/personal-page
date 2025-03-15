@@ -9,6 +9,7 @@
   --font-rubik: 'Rubik Mono One', sans-serif;
   --font-work: 'Work Sans', sans-serif;
   --font-gochi: 'Gochi Hand', sans-serif;
+  --screen-limit: 1440px;
 }
 
 /* Custom utility classes for your fonts */

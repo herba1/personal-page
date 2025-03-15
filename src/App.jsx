@@ -3,19 +3,13 @@ import Navbar from "./components/Navbar/Navbar.jsx";
 import Hero from "./components/Hero/Hero.jsx";
 import About from "./components/About/About.jsx";
 import Title from "./components/Title.jsx";
+import Projects from "./components/Projects/Projects.jsx";
 
-function Projects(){
-  return(
-    <div className="projects__container bg-red-500 min-h-5">
-      <Title title={"Projects"}/>
-      lkslf;aslfdjaewofjoawflksdj
-    </div>
-  );
-}
+import './components/Cards/Cards.css';
 
 function App() {
   return (
-    <div className=" ">
+    <div className=" overflow-x-clip ">
       <Navbar />
       <Hero />
       <About />

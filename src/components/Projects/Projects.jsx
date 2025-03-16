@@ -5,9 +5,9 @@ const PROJECT_INFO = [
   {
     name: "Linux-Lab",
     description:
-      "An interactive learning platform for users to learn the Unix command line, designed and implemented with Vanilla tools",
+      "An interactive learning platform for users to learn the Linux command line, designed and implemented with Vanilla tools",
     img: "/project_thumbnails/linux_lab_thumbnail.png",
-    code_link: "#",
+    code_link: "https://github.com/rene2412/Linux-Lab",
     live_link: "#",
   },
   {
@@ -16,7 +16,7 @@ const PROJECT_INFO = [
       "This page was made using react and tailwind following responsive design principles and a splash of creative css",
     img: "/project_thumbnails/personal_project_thumbnail.png",
     code_link: "https://github.com/herba1/personal-page",
-    live_link: "https://github.com/herba1/personal-page",
+    live_link: "https://herbart.dev",
   },
 ];
 
@@ -24,6 +24,7 @@ function CardButton({ text="",link="#" }) {
   return (
     <button className=" transition active:scale-95 hover:scale-110 min-h-11 min-w-20 shadow-[1px_4px_3px_rgba(0,0,0,0.25)] font-extrabold font-work ease-out flex justify-center items-center text-center bg-transparent text-black border-3 border-b-black hover:bg-yellow-400 active:invert">
       <a
+        target="_blank" rel="noopener noreferrer"
         href={link}
         className=" text-shadow-sm flex items-center justify-center grow w-full  h-full font-sans font-extrabold text-2xl"
       >
@@ -42,7 +43,7 @@ function CardText({ text=""}){
 function CardTitle({ title="",live_link="#"}){
   return(
     <h2 className="  lg:text-5xl  active:text-black active:invert hover:text-[var(--secondary)] text-3xl -rotate-3 font-gochi underline transition 1s ease hover:scale-110">
-      <a href={live_link} className=" ">
+      <a href={live_link} className=" " target="_blank" rel="noopener noreferrer">
         {title} 
       </a>
     </h2>
@@ -51,7 +52,8 @@ function CardTitle({ title="",live_link="#"}){
 
 function CardImage({ live_link="#",img='' }){
   return(
-    <a className=" shrink" href={live_link}>
+    <a className=" shrink" target="_blank" rel="noopener noreferrer" href={live_link}>
+ 
       <img
         className=" shrink text-center active:rotate-0 active:scale-100 active:invert hover:drop-shadow-[0px_4px_15px_rgba(0,0,0,.5)] drop-shadow-[0px_4px_5px_rgba(0,0,0,0.7)] lg:w-2xl w-full  will-change-auto transition ease-out 1s hover:scale-110 hover:rotate-6"
         src={img}
@@ -111,7 +113,7 @@ function TextWall({ text="Nothing's gonna change my world ", repeat=4}){
 
 export default function Projects(){
   return (
-    <div className=" relative projects__container flex flex-col items-center justify-center">
+    <div id="projects" className=" relative projects__container flex flex-col items-center justify-center">
       <Title title={"Projects"} />
       <Cards/>
       <ProjectsMessage/>

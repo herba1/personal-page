@@ -21,7 +21,7 @@ function About() {
   });
 
   return (
-    <div className=" md:justify-start min-h-[900px] mx-auto max-w-7xl about__container relative flex justify-center ">
+    <div id="about" className=" md:justify-start min-h-[900px] mx-auto max-w-7xl about__container relative flex justify-center ">
       <article className=" md:gap-8 mt-8 max-w-2xl  md:w-4xl z-10 text-select md:max-w-5xl flex flex-col items-center text-center px-12 lg:px-10 gap-3">
         <Title title={'About'}/>
         {paragraphs}

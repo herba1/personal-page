@@ -11,6 +11,10 @@
   --screen-limit: 1440px;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Custom utility classes for your fonts */
 .font-bebas {
   font-family: var(--font-bebas);

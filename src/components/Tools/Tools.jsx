@@ -7,8 +7,7 @@ function ToolsLogo({ name="",img="",link="" }) {
  <a 
     className="h-full w-full group flex flex-col items-center"
     href={link}
-    target="_blank"
-    rel="noopener noreferrer"
+    target="_blank" rel="noopener noreferrer"
   >
     <div className="relative flex-1 flex items-center justify-center w-full h-1">
       <img
@@ -55,7 +54,7 @@ function ToolSubtitle({ subtitle=""}){
 
 export default function Tools() {
   return (
-    <div className="Tools_container flex flex-col max-w-7xl mx-auto">
+    <div id="tools" className="Tools_container flex flex-col max-w-7xl mx-auto mb-12">
         <div className="  lg:grid grid-cols-5 place-items-center">
             <div className=" col-start-4">
                 <Title title="Tools" />

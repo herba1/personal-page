@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react';
 import './animation.css'
 
 const LINKS = [
-  { name: "about", id: "about_me" },
+  { name: "about", id: "about" },
   { name: "projects", id: "projects" },
   { name: "tools", id: "tools" },
   { name: "contact", id: "contact" },

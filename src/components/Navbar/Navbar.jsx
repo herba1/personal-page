@@ -11,7 +11,7 @@ const LINKS = [
 function NavDropdownButton({ handleClick, isOpen}) {
   return (
     <button
-      className="text-white shadow-[1px_4px_3px_rgba(0,0,0,0.25)] font-extrabold w-12 font-work md:hidden ease-out flex justify-center items-center p-2 text-center  h-10 bg-transparent  border-3 hover:text-black  hover:bg-yellow-400 active:invert"
+      className=" animate-slide-left text-white shadow-[1px_4px_3px_rgba(0,0,0,0.25)] font-extrabold w-12 font-work md:hidden ease-out flex justify-center items-center p-2 text-center  h-10 bg-transparent  border-3 hover:text-black  hover:bg-yellow-400 active:invert"
       onClick={handleClick}
     >
         {isOpen?'---':'+++'}
@@ -45,7 +45,8 @@ function NavLinks() {
   );
 }
 
-function NavDropdown() {
+function NavDropdown({ isOpen=false }) {
+  isOpen;
   const dropdownLinks = LINKS.map((link)=>{
     return(
         <li key={link.id} className=" font-reenie shadow-2xl font-extrabold active:scale-100 hover:z-20 flex justify-center text-7xl h-full outline-4 z-11 transition ease-out duration-200 hover:scale-110 bg-yellow-50 hover:bg-yellow-400 active:invert ">
@@ -87,7 +88,7 @@ function Navbar() {
   return (
     <>
       <nav className=" bg-black/80 sticky top-0 text-negative shadow-lg border-b-4  z-20 flex items-center px-6 h-18 py-3 justify-between ">
-        <div className=" px-16 flex items-center h-full w-full justify-between relative">
+        <div className=" lg:px-16 flex items-center h-full w-full justify-between relative">
           <NavLogo />
           <NavDropdownButton handleClick={handleClick} isOpen={isOpen} />
           <NavLinks />

@@ -93,7 +93,7 @@ function Cards(){
 
 function ProjectsMessage(){
   return(
-    <h3 className="font-gochi lg:text-7xl z-10 text-4xl mb-10 animate-pulse">work in progress...</h3> 
+    <h3 className=" select-none font-gochi lg:text-7xl z-10 text-4xl mb-10 animate-pulse">work in progress...</h3> 
   );
 }
 

@@ -102,7 +102,7 @@ function ProjectsMessage(){
 function TextWall({ text="Nothing's gonna change my world ", repeat=4}){
   let lines = [];
   for(let i = 0; i < repeat;i++){
-    lines.push(<p key={i} className={`animate-randomShift${i+1} bg-yellow-400  relative leading-none lg:text-4xl select-none font-bebas text-2xl text-nowrap`}>{text.repeat(20)}</p>);
+    lines.push(<p key={i} className={`animate-randomShift${i+1} bg-yellow-400 whitespace-nowrap  relative leading-none lg:text-4xl select-none font-bebas text-2xl text-nowrap`}>{text.repeat(20)}</p>);
   };
   return(
   <div className=" overflow-x-clip ">

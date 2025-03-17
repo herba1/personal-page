@@ -45,7 +45,7 @@ function NavLinks() {
   );
 }
 
-function NavDropdown({ isOpen=false }) {
+function NavDropdown({ isOpen=false,handleClick }) {
   isOpen;
   const dropdownLinks = LINKS.map((link)=>{
     return(
@@ -53,6 +53,7 @@ function NavDropdown({ isOpen=false }) {
           <a
             href={`#${link.id}`}
             className="py-4 overflow-hidden flex-1 relative text-center text-shadow"
+            onClick={handleClick}
           >
            {link.name} 
           </a>
@@ -87,14 +88,15 @@ function Navbar() {
 
   return (
     <>
-      <nav className=" bg-black/80 sticky top-0 text-negative shadow-lg border-b-4  z-20 flex items-center px-6 h-18 py-3 justify-between ">
+      <div className='fixed top-0 left-0 right-0 z-30 h-18 backdrop-blur-xl '></div>
+      <nav className=" bg-black/80 sticky drop-shadow-lg top-0 text-negative shadow-lg shadow-black/80 border-b-4  z-30 flex items-center px-6 h-18 py-3 justify-between ">
         <div className=" lg:px-16 flex items-center h-full w-full justify-between relative">
           <NavLogo />
           <NavDropdownButton handleClick={handleClick} isOpen={isOpen} />
           <NavLinks />
         </div>
       </nav>
-      {isOpen && <NavDropdown/>}
+      {isOpen && <NavDropdown handleClick={handleClick}/>}
     </>
   );
 }

@@ -1,33 +1,33 @@
 # Portfolio Website Documentation
+https://herbart.dev/ 
 
 ## Overview
-This documentation outlines the personal portfolio website built by Herbart Hernandez. The website serves as both a showcase of skills and projects and a portfolio project itself, demonstrating front-end development capabilities using React and Tailwind CSS.
+This documentation outlines my personal portfolio website. The website serves as both a showcase of my skills and projects while also an portfolio project itself, demonstrating front-end development capabilities using React and Tailwind CSS. 
 
 ## Technology Stack
 - **Frontend Framework**: React
 - **Styling**: Tailwind CSS
 - **Build Tool**: Vite
 - **Animation**: Custom CSS animations and transitions
-- **Deployment**: (Not specified in the codebase)
+- **Deployment**: Vercel 
 
 ## Site Structure
 
 ### 1. Hero Section
-A visually striking introduction featuring:
-- Name display ("herb")
-- Decorative text elements
+A creative introduction containing:
+- Name display inverted colors ("herb")
 - Custom styling for immediate visual impact
 
 ### 2. About Section
 Personal introduction containing:
-- Professional bio as a front-end developer
-- Educational background (Computer Science student)
+- Bio as a developer
+- Educational background 
 - Personal interests and goals
 
 ### 3. Projects Section
-Showcase of completed work including:
+Showcase of projects including:
 - Linux-Lab project
-- The portfolio website itself (self-referential)
+- This portfolio website itself 
 - Project cards with:
   - Thumbnails/screenshots
   - Description
@@ -35,18 +35,17 @@ Showcase of completed work including:
   - Links to live demos and source code
 
 ### 4. Tools/Skills Section
-Display of technical competencies organized by categories:
+Display of technical tools organized by categories:
 - **Front-end**: HTML, CSS, JavaScript, React, Tailwind
 - **Software**: Python, C++, Git, SQL
 - **Additional Tools**: Figma
-- Visual representation with logo icons and links to documentation
+- Visual representation with logo icons and links to respective websites 
 
 ### 5. Contact Section
 Connection options including:
 - LinkedIn profile
 - GitHub profile
 - Email contact
-- Professional social media presence
 
 ## Technical Implementations
 
@@ -57,9 +56,8 @@ Connection options including:
 
 ### UI/UX Features
 - Interactive elements with hover/active states
-- Smooth transitions between sections
-- Thoughtful typography choices
 - Clear visual hierarchy
+- Focus on creative CSS (inverted color themes)
 
 ### Performance Considerations
 - Optimized image assets
@@ -74,8 +72,8 @@ Connection options including:
 ## Project Highlights
 
 ### Design Elements
-- Modern, clean aesthetic
-- Creative use of typography
+- Modern, indie aesthetic
+- Creative use of transitions and effects 
 - Thoughtful color palette
 - Integration of visual elements that reflect personality
 
@@ -101,5 +99,6 @@ This portfolio website effectively demonstrates skills in:
 4. Component-based architecture
 5. CSS styling with Tailwind
 6. Project showcasing and self-presentation
+7. Designing and Wireframing mockup in Figma before implementation 
 
-The documentation above provides an overview of what has been created and can serve as a reference for discussing the project with potential employers or clients.
+Thanks for reading!

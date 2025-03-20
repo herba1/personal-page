@@ -1,5 +1,5 @@
 # Portfolio Website Documentation
-https://herbart.dev/ 
+## [herbart.dev](https://herbart.dev/)
 
 ## Overview
 This documentation outlines my personal portfolio website. The website serves as both a showcase of my skills and projects while also an portfolio project itself, demonstrating front-end development capabilities using React and Tailwind CSS. 
@@ -69,7 +69,16 @@ Connection options including:
 - Appropriate color contrast
 - Alt text for images
 
+## Design Process
+
+ - Wireframing and Prototyping: Created comprehensive wireframes and interactive prototypes in Figma
+ - Design-to-Code Implementation: Translated Figma designs directly to React components
+ - Design System: Developed a consistent design system with reusable components
+ - Iterative Refinement: Used Figma for rapid prototyping before finalizing implementation
+
 ## Project Highlights
+
+ Check out the design file here [Figma Project](https://www.figma.com/design/5mZfd023zeLDjLZVRlBA5L/personal-page?node-id=0-1&t=84UoAChhMNCj6dQk-1)
 
 ### Design Elements
 - Modern, indie aesthetic

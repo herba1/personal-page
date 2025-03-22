@@ -92,25 +92,3 @@ body{
   animation: randomShift 1s 3s infinite alternate ease-in-out;
 }
 
-.animate-sway{
-  animation: sway 15s alternate-reverse infinite ease-in-out;
-}
-
-@keyframes sway{
-  from{
-    scale:1.05;
-    rotate: 2deg;
-    translate: 1px 5px;
-  }
-  50%{
-    scale: 0.95;
-    rotate: -2deg;
-    translate: 1px 5px;
-  }
-  to{
-    scale:1;
-    rotate: -1deg;
-    translate: 1px 5px;
-  }
-}
-

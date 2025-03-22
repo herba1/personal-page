@@ -49,7 +49,7 @@ function NavDropdown({ isOpen=false,handleClick }) {
   isOpen;
   const dropdownLinks = LINKS.map((link)=>{
     return(
-        <li key={link.id} className=" font-reenie shadow-2xl font-extrabold active:scale-100 hover:z-20 flex justify-center text-7xl h-full outline-4 z-11 transition ease-out duration-200 hover:scale-110 bg-yellow-50 hover:bg-yellow-400 active:invert ">
+        <li key={link.id} className="font-reenie shadow-2xl font-extrabold active:scale-100 hover:z-20 flex justify-center text-7xl h-full outline-4 z-11 transition ease-out duration-200 hover:scale-110 bg-yellow-50 hover:bg-yellow-400 active:invert ">
           <a
             href={`#${link.id}`}
             className="py-4 overflow-hidden flex-1 relative text-center text-shadow"
@@ -63,7 +63,7 @@ function NavDropdown({ isOpen=false,handleClick }) {
   })
 
   return (
-    <section className="fixed z-30 text-black  border-y-4 border-black md:hidden bg-default box-content block left-0 right-0 ">
+    <section className="fixed z-30 text-black  border-y-4 border-black md:hidden bg-default box-content block left-0 right-0 max-h-[calc(100vh - 72px)] overflow-y-auto overflow-x-clip  ">
       <ul className="flex flex-col relative">
         {dropdownLinks}
       </ul>

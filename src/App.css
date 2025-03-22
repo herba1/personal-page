@@ -4,15 +4,6 @@
   filter: invert();
 }
 
-.nav#navDropdown{
-  mix-blend-mode: normal !important;
-  filter: none !important;
-}
-
-.title-fluid{
-  font-size: clamp(2rem, 15vw, 4rem);
-}
-
 .animate-fadeIn{
   transform-origin: left;
   animation: fadeIn 0.5s ease;

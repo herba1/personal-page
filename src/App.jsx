@@ -8,7 +8,6 @@ import Tools from "./components/Tools/Tools.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import LoadingScreen from "./components/Utils/LoadingScreen.jsx";
 
-import './components/Cards/Cards.css';
 
 function App() {
   return (

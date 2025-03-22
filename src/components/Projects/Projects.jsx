@@ -5,10 +5,10 @@ const PROJECT_INFO = [
   {
     name: "Linux-Lab",
     description:
-      "An interactive learning platform for users to learn the Linux command line, designed and implemented with Vanilla tools",
+      "Interactive learning platform learn the Linux command line, designed and implemented with Vanilla tools",
     img: "/project_thumbnails/linux_lab_thumbnail.png",
-    code_link: "https://github.com/rene2412/Linux-Lab",
-    live_link: "#",
+    code_link: "https://github.com/rene2412/Linux-Lab/blob/617a73294c3f34171faecf3eb24ab28df4d0ba99/documentation/FRONTEND_PORTFOLIO.md",
+    live_link: "https://linux-lab.ngrok.dev/Linux-Lab/src/pages/landing_page/landing_page.html",
   },
   {
     name: "Personal",
@@ -52,10 +52,9 @@ function CardTitle({ title="",live_link="#"}){
 
 function CardImage({ live_link="#",img='' }){
   return(
-    <a className=" shrink" target="_blank" rel="noopener noreferrer" href={live_link}>
- 
+    <a className=" z-10 h-full w-full flex justify-center items-center" target="_blank" rel="noopener noreferrer" href={live_link}>
       <img
-        className=" shrink text-center active:rotate-0 active:scale-100 active:invert hover:drop-shadow-[0px_4px_15px_rgba(0,0,0,.5)] drop-shadow-[0px_4px_5px_rgba(0,0,0,0.7)] lg:w-2xl w-full  will-change-auto transition ease-out 1s hover:scale-110 hover:rotate-6"
+        className=" md:scale-110 lg:scale-115 max-w-full max-h-full w-auto h-auto object-contain text-center active:rotate-0 active:scale-100 active:invert hover:drop-shadow-[0px_4px_15px_rgba(0,0,0,.5)] drop-shadow-[0px_4px_5px_rgba(0,0,0,0.7)] will-change-auto transition ease-out 1s hover:scale-120 lg:hover:scale-130 hover:rotate-6"
         src={img}
         alt="thumbnail"
       />
@@ -66,12 +65,16 @@ function CardImage({ live_link="#",img='' }){
 // FIX THE IMAGE OVERFLOW
 function Card({ project={} }){
   return (
-    <article className="shadow-[1px_4px_10px_rgba(0,0,0,0.5)] card border-6 p-4 lg:min-w-md lg:max-w-lg lg:min-h-[500px] lg:h-[550px] min-w-xs max-w-md min-h-fit drop-shadow-md flex flex-col justify-center items-center">
+    <article className="shadow-[1px_4px_10px_rgba(0,0,0,0.5)] card border-6 p-4 lg:min-w-md lg:max-w-lg  lg:h-[550px] min-w-xs max-w-md h-[420px] drop-shadow-md flex flex-col justify-center items-center">
+      <div className="h-1/2 w-full z-10">
       <CardImage live_link={project.live_link} img={project.img}/>
-      <div className="text-center text_container">
+      </div>
+      <div className=" z-0 flex flex-col justify-between text-center text_container flex-1 w-full h-full">
+        <div className=" px-4">
         <CardTitle live_link={project.live_link} title={project.name}/>
         <CardText text={project.description}/>
-        <div className="button__containers flex justify-around py-4">
+        </div>
+        <div className="button__containers flex justify-around py-4 items-center">
           <CardButton link={project.live_link} text="live"/>
           <CardButton link={project.code_link} text="code"/>
         </div>

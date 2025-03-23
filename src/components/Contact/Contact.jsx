@@ -8,7 +8,7 @@ export default function Contact(){
                 <ul className="flex justify-around ">
                     <li className="h-10 w-10 lg:h-20 lg:w-20"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/herbart-hernandez/" ><img src="/logos/linkedin.svg" alt="linkedin link and logo"/></a></li>
                     <li className="h-10 w-10 lg:h-20 lg:w-20"><a target="_blank" rel="noopener noreferrer" href="https://github.com/herba1"><img src="/logos/github-mark.svg" alt="github link and logo"/></a></li>
-                    <li className="h-10 w-10 lg:h-20 lg:w-20"><a href="mailto:burnedcard77@gmail.com"><img src="/logos/email.svg" alt="email link and logo"/></a></li>
+                    <li className="h-10 w-10 lg:h-20 lg:w-20"><a href="mailto:herbart.dev@gmail.com"><img src="/logos/email.svg" alt="email link and logo"/></a></li>
                 </ul>
             </div>
 

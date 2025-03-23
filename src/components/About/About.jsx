@@ -10,10 +10,27 @@ const ABOUT_TEXT = [
 
 function About() {
   const paragraphs = ABOUT_TEXT.map((para, index) => {
+    if(index === 2){
+      const startText = 'You can find me Producing and Songwriting in my free time ';
+      const endText = '. The intersection of tech and artistic expressions has been extremely fulfilling and satisfying.';
+      const link = 'https://www.youtube.com/@herb4697';
+
+      return(
+      <p
+        key={index}
+        className=" md:text-2xl lg:text-3xl transition  leading-tight  font-work text-md sm:text-xl  text-shadow-sm"
+      >
+        {startText} 
+        <a href={link} target="_blank" rel="noopener noreferrer" className=" inline-block font-gochi font-extrabold hover:text-amber-500 active:invert transform hover:scale-110 active:scale-90 transition"> (link here↗)</a>
+        {endText}
+      </p>
+
+      );
+    }
     return (
       <p
         key={index}
-        className=" md:text-2xl lg:text-3xl transition hover:scale-105 leading-tight  font-work text-md sm:text-xl  text-shadow-sm"
+        className=" md:text-2xl lg:text-3xl transition leading-tight  font-work text-md sm:text-xl  text-shadow-sm"
       >
         {para}
       </p>

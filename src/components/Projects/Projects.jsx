@@ -7,7 +7,7 @@ const PROJECT_INFO = [
     description:
       "Interactive learning platform learn the Linux command line, designed and implemented with Vanilla tools",
     img: "/project_thumbnails/linux_lab_thumbnail.png",
-    code_link: "https://github.com/rene2412/Linux-Lab/blob/0620675579f9135d182cd52a87578d57574fb282/documentation/FRONTEND_PORTFOLIO.md",
+    code_link: "https://github.com/rene2412/Linux-Lab/blob/main/documentation/FRONTEND_PORTFOLIO.md",
     live_link: "https://linux-lab.ngrok.dev/Linux-Lab/src/pages/landing_page/landing_page.html",
   },
   {

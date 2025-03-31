@@ -1,9 +1,12 @@
 import SectionFade from "../SectionFade";
+import MarqueeCustom from "../Marquee";
 
 function HeroTextLeft(){
   return(
-  <div className="absolute  w-dvh lg:left-12 left-6 bottom-0 origin-left -rotate-90">
-    <span className="  whitespace-nowrap lg:text-4xl  select-none font-bebas text-bg text-2xl text-nowrap">Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! Welcome! </span>
+  <div className="absolute  w-[3000px] lg:left-12 left-6 -bottom-[500px] origin-left -rotate-90">
+    <MarqueeCustom isRotated={true} >
+    <span className="  whitespace-nowrap lg:text-4xl  select-none font-bebas text-bg text-2xl text-nowrap"> Welcome! Welcome! Welcome! </span>
+    </MarqueeCustom>
   </div>
   );
 }
@@ -11,7 +14,9 @@ function HeroTextLeft(){
 function HeroTextRight(){
   return(
   <div className="absolute lg:right-12  right-6 origin-right bottom-0 rotate-90">
+    <MarqueeCustom isRotated={true} >
     <span className="whitespace-nowrap  lg:text-4xl select-none font-bebas text-bg text-2xl text-nowrap ">Enjoy Your Stay! Enjoy Your Stay!  Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! Enjoy Your Stay! </span>
+    </MarqueeCustom>
   </div>
   );
 
